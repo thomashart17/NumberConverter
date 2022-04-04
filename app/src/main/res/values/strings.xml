@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Number Converter</string>
     <string name="title">Number Converter</string>
+    <string-array name="spinner_items">
+        <item>Binary</item>
+        <item>Decimal</item>
+        <item>Hexadecimal</item>
+    </string-array>
 </resources>
