@@ -2,10 +2,12 @@ package com.thomashart.numberconverter;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.HapticFeedbackConstants;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements View.OnClickListener {
 
     private Spinner spinner1, spinner2;
     private ArrayAdapter<CharSequence> arrayAdapter;
@@ -23,5 +25,10 @@ public class MainActivity extends Activity {
 
         spinner1.setAdapter(arrayAdapter);
         spinner2.setAdapter(arrayAdapter);
+    }
+
+    @Override
+    public void onClick(View view) {
+        view.performHapticFeedback(HapticFeedbackConstants.KEYBOARD_TAP);
     }
 }
