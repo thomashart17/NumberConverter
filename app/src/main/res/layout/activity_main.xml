@@ -17,7 +17,7 @@
         android:layout_weight="1"
         android:gravity="center"
         android:text="@string/title"
-        android:textSize="24dp"/>
+        android:textSize="24sp" />
 
     <View
         android:layout_width="match_parent"
@@ -29,16 +29,18 @@
         android:layout_height="0dp"
         android:layout_weight="1">
         <Spinner
-            android:id="@+id/spinner1"
+            android:id="@+id/input_spinner"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2" />
-        <View
+        <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:src="@drawable/ic_baseline_swap_horiz_24" />
         <Spinner
-            android:id="@+id/spinner2"
+            android:id="@+id/outputSpinner"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2" />
@@ -54,18 +56,24 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:gravity="center" />
+        android:gravity="center"
+        android:textSize="20sp"
+        tools:text="TEST" />
 
-    <View
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
 
     <TextView
+        android:id="@+id/answer_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"
-        android:gravity="center" />
+        android:gravity="center"
+        android:textSize="20sp"
+        tools:text="TEST" />
 
     <GridLayout
         android:layout_width="match_parent"
@@ -86,7 +94,8 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/seven"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/eight_button"
@@ -101,7 +110,8 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/eight"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/nine_button"
@@ -116,7 +126,8 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/nine"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/f_button"
@@ -131,7 +142,8 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/f"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/clear_button"
@@ -146,7 +158,8 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/clear"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/four_button"
@@ -161,7 +174,8 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/four"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/five_button"
@@ -176,7 +190,8 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/five"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/six_button"
@@ -191,7 +206,8 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/six"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/e_button"
@@ -206,9 +222,10 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/e"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/delete_button"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="0dp"
@@ -220,7 +237,7 @@
             android:layout_margin="1dp"
             android:background="@color/black"
             android:onClick="onClick"
-            android:text="@string/delete"
+            android:src="@drawable/ic_baseline_backspace_24"
             android:textColor="@color/white" />
 
         <Button
@@ -236,7 +253,8 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/one"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/two_button"
@@ -251,7 +269,8 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/two"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/three_button"
@@ -266,7 +285,8 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/three"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/d_button"
@@ -281,7 +301,8 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/d"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/decimal_button"
@@ -296,7 +317,8 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/decimal"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/zero_button"
@@ -311,7 +333,8 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/zero"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/a_button"
@@ -326,7 +349,8 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/a"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/b_button"
@@ -341,7 +365,8 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/b"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/c_button"
@@ -356,7 +381,8 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/c"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/equals_button"
@@ -371,6 +397,7 @@
             android:background="@color/black"
             android:onClick="onClick"
             android:text="@string/equals"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
     </GridLayout>
 </LinearLayout>
