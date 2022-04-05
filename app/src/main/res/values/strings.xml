@@ -17,6 +17,7 @@
     <string name="d">D</string>
     <string name="e">E</string>
     <string name="f">F</string>
+    <string name="clear">C</string>
     <string name="delete">DEL</string>
     <string name="decimal">.</string>
     <string name="equals">=</string>
